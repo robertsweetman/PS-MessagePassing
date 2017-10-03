@@ -41,7 +41,7 @@ You should get this output:
 
 ![alt text](/Un-linked%20scripts/un-linked%20scripts.png)
 
-If you edit replace $global:value1 in file1.ps1 with $value1 and run these again in a different Powershell window you'll see a different result. There will be nothing returned when you run the second script.
+If you edit file1.ps1 to replace $global:value1 = "foo" with $value1 = "foo", **open a new Powershell window** and run them again you'll see that _file2 call result:_ will be blank.
 
 ## Dot sourcing files and Scope problems
 
