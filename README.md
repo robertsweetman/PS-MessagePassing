@@ -42,9 +42,9 @@ You should get this output:
 
 ![alt text](/Un-linked%20scripts/un-linked%20scripts.png)
 
-If you edit file1.ps1 to replace $global:value1 = "foo" with $value1 = "foo", **open a new Powershell window** and run them again you'll see that _file2 call result:_ entry will be blank because there's no means to get the value to the second script.
+If you edit file1.ps1 to replace `$global:value1 = "foo"` with `$value1 = "foo"`, **open a new Powershell window** and run them again you'll see that _file2 call result:_ entry will be blank because there's no means to get the value to the second script.
 
-## Dot sourcing files and Scope problems
+## Dot sourcing files and Scope problems with Invoke-Command on Remote machines
 This really killed me early on. I would change locations of scripts or edit how things ran and all of a sudden the values would completely vanish. Later (with some excellent coaching and watching a bunch of videos about 'advanced' functions) I figured out a better way of managing this.
 
 Anyway, this relies on a couple of key pieces of information.
