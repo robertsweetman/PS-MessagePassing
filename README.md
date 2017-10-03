@@ -1,4 +1,4 @@
-# PS-MessagePassing in Powershell
+# Message Passing in Powershell
 One thing I've run into (regardless of language I'm looking at) is that once you've 'kind of' understood the syntax differences between languages and you can make simple scripts work, well, let's say _"sorry kid, you're on your own"_. 
 
 I began hacking at a (small? 3000 LOC) Powershell application which was driven by Jenkins to clone VMs on vCenter, copy and install a bunch of software before kicking off another set of scripts to run tests on the build. 
@@ -7,7 +7,7 @@ Given that I had literally no idea when I began beyond the basics of commandlets
 
 Some questions I had or things I didn't comprehend till much later...
 
-* Where's did the value of 'x' item gone after I changed it? (the WTF result)
+* Where did the value of 'x' variable go after I changed the code? (the WTF?! result)
 * How are functions from one script accessible elsewhere?
 * What's the difference between a script and a bunch of functions
 * Advanced functions? Why? What's all this Param nonsense
@@ -16,7 +16,8 @@ Some questions I had or things I didn't comprehend till much later...
 * Can you use global variables in a single session where scripts don't 'know' about each other?
 
 To clarify my thinking around these topics I've created some examples.
-At the moment it's about one example per WTF moment.
+
+At the moment it's about one example per WTF(?!) moment from the last 18 months.
 
 ## A note on learning to program/new programming languages
 The one thing that I've found _super_ effective is to build experiments that show (or don't) the particular behaviour you're trying to understand. Then you've got control over the whole situation as you make small changes and can see what things break or where the boundaries are. 
@@ -29,7 +30,7 @@ One thing I've appreciated in the Ansible documentation is that they actually su
 
 If you approach this type of topic as 'playing' in order to understand something rather than being under pressure to make something lovely you'll enjoy learning. If you take a different approach you might find you're going to have a bad time...
 
-## Passing values between scripts in the same Powershell session
+## Passing values between un-linked scripts in the same Powershell session
 [!add text](//link to folder of example repo) 
 
 ## Dot sourcing files and Scope problems
