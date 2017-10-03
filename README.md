@@ -31,7 +31,8 @@ One thing I've appreciated in the Ansible documentation is that they actually su
 If you approach this type of topic as 'playing' in order to understand something rather than being under pressure to make something lovely you'll enjoy learning. If you take a different approach you might find you're going to have a bad time...
 
 ## Passing values between un-linked scripts in the same Powershell session
-![shortcut](/Un-linked%20scripts) 
+<!-- ![shortcut](/Un-linked%20scripts)
+     TODO: add this folder shortcut to the section title -->
 
 1. Open a powershell session
 2. Run file1.ps1
