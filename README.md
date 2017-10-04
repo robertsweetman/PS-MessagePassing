@@ -50,12 +50,23 @@ It's blank because there's no way to pass the value to the second script.
 This really killed me early on. I would change locations of scripts or edit how things ran and all of a sudden the values would completely vanish. Later (with some excellent coaching and watching a bunch of videos about 'advanced' functions) I figured out a better way of managing this.
 
 Anyway, this relies on a couple of key pieces of information.
+```powershell
+# right at the top of the initial script
+param()
+```
+Parameter block has to be presented first. 
+<!--TODO: figure out how strict these can be (types?)
+    TODO: can you use Advanced function validation here also? Mandatory etc. as well?
+-->
 
 ```powershell
 # dot sourcing
-. <path to a file>
-
+. ($PSScriptRoot + "\relative path to a file")
+# this pre-loads the code in that script so you can call it's contents later
 ```
+Pre-loads the code and (ideally) should NOT have values hidden in these
+
+If you want to do that then have a pre-defined 'global' variables .ps1 file that can be accessed by everything. Then you can pass them into each function and you explicitly know where they're coming from!
 
 ## Slightly larger application structure (making things easy to find)
 
