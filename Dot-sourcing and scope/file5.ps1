@@ -6,6 +6,10 @@ function file5_function {
 
     Write-Host "file5 function input param: $stringInput"
 
-    #$script:file5_returnVar = "$stringInput" + "-boogalloo" 
-    return "$stringInput" + "-boogalloo"
+
+    # TODO: explain this option (script var)
+    # $script:file5_returnvalue = "$stringInput" + "-boogalloo" 
+    
+    # TODO: explain this in relation to how 'return' works in Powershell and why to avoid it
+    "$stringInput" + "-boogalloo"
 }

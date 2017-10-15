@@ -10,12 +10,13 @@ param()
 
 file4_function
 
-$myreturnvalue = file5_function -stringInput "woohoo"
+# TODO: explain why this is required and how it works in relation to 'return' or not having one
+$file5_returnvalue = file5_function -stringInput "woohoo"
 
 <# https://blogs.technet.microsoft.com/heyscriptingguy/2009/07/08/hey-scripting-guy-how-do-i-get-data-out-of-a-function/
 This is a really good article on function scope. 
 #>
 
-Write-Host "file5 return var: $myreturnvalue <== returned to the calling script"
+Write-Host "file5 return var: $file5_returnvalue <== returned to the calling script"
 
 #Get-Location
